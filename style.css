@@ -1,0 +1,78 @@
+body {
+    background-image: url(img/dmc\ 1\ backgroud.jpg);
+    background-size: 100vh;
+        background-size: cover;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0; 
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+#logo {
+    height: 80px;
+    width: auto;
+    display: block; 
+}
+
+.linkhead {
+    display: flex; 
+    gap: 20px;
+}
+
+.linkhead a {
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+.linkhead a:hover {
+    color: red; 
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen-principal {
+    max-height: 330px;
+    margin-top: 20px;
+}
+
+.conteudo-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+ 
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 40px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    gap: 40px; 
+}
+
+.gif-direito img {
+    width: 250px; 
+    height: auto;;
+}
