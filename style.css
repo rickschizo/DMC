@@ -76,3 +76,13 @@ header {
     width: 250px; 
     height: auto;;
 }
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.imagem-personagem {
+    max-width: 500px;
+
+}
