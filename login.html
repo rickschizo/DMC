@@ -18,13 +18,62 @@
             </div>
         </div>
     </header>
-        <div class="login">
-        <h1>Login</h1>
-        <input type="text" placeholder="nome">
-        <br><br>
-        <input type="password" placeholder="senha">
-        <br><br>
-        <button>Enviar</button>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastre-se</b></legend>
+                <br>         
+    <div class="input">
+        <input type="text" name="nome" id="nome">
+        <label for="nome">nome</label>
+    <div class="input">
+        <input type="text" name="nome" id="nome">
+        <label for="nome">nickname</label>
     </div>
+    <div class="escolher">
+        <p>Personagem</p>
+        <select type="s_tipo" name="s_tipo">
+            <option value="1">Densetsu</option>
+            <option value="2">Lady</option>
+            <option value="3">Trish</option>
+            <option value="4">Vergil</option>
+            <option value="5">Nero</option>
+            <option value="6">V</option>
+        </select>           
+<div class="arsenal">
+    <p>Arsenal:</p>
+        <input type="radio" id="r_espa" name="Arsenal" value="espada" required>
+        <label for="r_espa">Espada</label>
+        <input type="radio" id="r_pisto" name="Arsenal" value="pistola" required>
+        <label for="r_pisto">Pistola</label>
+        <input type="radio" id="r_kata" name="Arsenal" value="katana"required>
+        <label for="r_kata">Katana</label>
+        <input type="radio" id="r_lan" name="Arsenal" value="lanca" required>
+        <label for="r_lan">Lança</label>
+        <input type="radio" id="r_armade" name="Arsenal" value="armasdemoniacas" required>
+        <label for="r_armade">Armas Demoníacas</label>
+    </div>
+<div class="combate">
+    <p>Estilo de Combate</p>
+        <input id="r_comrapi" type="radio" name="combate" value="r_comrapi" required>
+        <label for="r_comrapi">Compate Rapido</label>
+        <input id="r_brut" type="radio" name="combate" value="r_brut" required>
+        <label for="r_brut">Força Bruta</label>
+        <input id="r_dista" type="radio" name="combate" value="r_dista" required>
+        <label for="r_dista">Cambate a Distancia</label>
+        <input id="r_tec" type="radio" name="combate" value="r_tec" required>
+        <label for="r_tec">Tecnico e estratégico</label>
+        <input id="r_equi" type="radio" name="combate" value="r_equi" required>
+        <label for="r_equi">Equilibrado</label>
+        <br><br>
+
+        <input type="submit" name="submit" id="eniar">
+    </div>
+    </div>
+    </div>
+ </fieldset>
+        </form>
+    
 </body>
 </html>

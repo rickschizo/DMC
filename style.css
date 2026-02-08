@@ -116,22 +116,6 @@ h2{
     font-size: 15px;
 }
 
-.login{
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #440606;
-  color: #FFFFFF;
-}
-
-.login{
-  background-color: rgba(0, 0, 0, 0.9);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 80px;
-  border-radius: 15px;
-}
-
 input{
   padding: 15px;
   border: none;
@@ -152,4 +136,79 @@ button{
 button.hover{
   background-color: #6C0A0A;
   cursor: pointer;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.titulo-tabela {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.tabela-jogos {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tabela-jogos th,
+.tabela-jogos td {
+    border: 1px solid red;
+    padding: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.tabela-jogos th {
+    background-color: black;
+    color: red;
+}
+
+.tabela-jogos tr:hover {
+    background-color: #222;
+}
+
+body{
+    background-color: rgb(95, 2, 2);
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+fieldset {
+    border: 3px solid rgb(95, 2, 2);
+}
+
+legend {
+    border: 1px solid rgb(95, 2, 2);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(95, 2, 2);
+    border-radius: 8px;
+}
+
+input{
+    position: relative;
+    background: none;
+    border: 1px;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
 }
