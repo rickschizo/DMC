@@ -76,10 +76,10 @@ header {
 
 .conteudo-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
-    width: 80%;
+    width: 90%;
     max-width: 1000px;
     margin-top: 40px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -88,6 +88,19 @@ header {
     border-radius: 10px;
     color: white;
     gap: 40px; 
+}
+
+@media (min-width: 768px) {
+    .conteudo-info {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagens-personagens > div {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .gif-direito img {
@@ -159,19 +172,22 @@ button.hover{
     color: white;
 }
 
-.titulo-tabela {
+.titulo-tabela, #titulo-lista {
     font-family: Arial, sans-serif;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid red;
     padding: 20px;
     border-radius: 10px;
-    width: 40%;
+    width: 90%;
+    max-width: 635px;
     margin: 20px auto;
+    box-sizing: border-box;
 }
 
 .tabela-jogos {
     border-collapse: collapse;
-    width: 90%;
+    overflow-x: auto;
+    width: 100%;
     max-width: 1000px;
     background-color: rgba(0, 0, 0, 0.8);
 }
