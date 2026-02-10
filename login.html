@@ -11,26 +11,29 @@
         <div class="menu">
             <a href="index.html"><img id="logo" src="img/Devil-May-Cry-Logo-PNG-1014534234.png" alt=""></a>
             <div class="linkhead">
-                <a href="compra.html">onde comprar</a>
-                <a href="personagens.html">personagens</a>
-                <a href="login.html">login</a>
-                <a href="extras.html">extras</a>
+                <a href="compra.html">Onde Comprar</a>
+                <a href="personagens.html">Personagens</a>
+                <a href="login.html">Login</a>
+                <a href="extras.html">Extras</a>
             </div>
         </div>
     </header>
 <body>
-    <div class="container">
-        <form action="">
+    <div class="box">
+        <form action="index.html">
             <fieldset>
                 <legend><b>Cadastre-se</b></legend>
-                <br>         
-    <div class="input">
-        <input type="text" name="nome" id="nome">
-        <label for="nome">nome</label>
-    <div class="input">
-        <input type="text" name="nome" id="nome">
-        <label for="nome">nickname</label>
+            <br>         
+    <div class="inputbox">
+        <input type="text" name="nome" id="nome" class="inputuser" required>
+        <label for="nome" class="labelinput">nickname</label>
     </div>
+    <br>
+    <div class="inputbox">
+        <input type="password" name="senha" id="senha" class="inputuser" required>
+        <label for="senha" class="labelinput">senha</label>
+    </div>
+    <br>
     <div class="escolher">
         <p>Personagem</p>
         <select type="s_tipo" name="s_tipo">
@@ -40,7 +43,8 @@
             <option value="4">Vergil</option>
             <option value="5">Nero</option>
             <option value="6">V</option>
-        </select>           
+        </select>  
+        <br>         
 <div class="arsenal">
     <p>Arsenal:</p>
         <input type="radio" id="r_espa" name="Arsenal" value="espada" required>
@@ -54,6 +58,7 @@
         <input type="radio" id="r_armade" name="Arsenal" value="armasdemoniacas" required>
         <label for="r_armade">Armas Demoníacas</label>
     </div>
+    <br>
 <div class="combate">
     <p>Estilo de Combate</p>
         <input id="r_comrapi" type="radio" name="combate" value="r_comrapi" required>
@@ -68,7 +73,7 @@
         <label for="r_equi">Equilibrado</label>
         <br><br>
 
-        <input type="submit" name="submit" id="eniar">
+        <input type="submit" name="submit" id="eniar" class="enterbutton">
     </div>
     </div>
     </div>

@@ -1,4 +1,4 @@
-body {
+body{
     background-image: url('img/dmc-1-backgroud.jpg');
     background-color: rgb(95, 2, 2); 
     background-size: cover;
@@ -15,7 +15,14 @@ h2, h1 {
     color: white;
     text-align: center;
 }
-
+#titulo-lista{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #550000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 635px;
+    margin: 20px auto;
+}
 header {
     background-color: black;
     padding: 10px 0; 
@@ -75,7 +82,8 @@ header {
     width: 80%;
     max-width: 1000px;
     margin-top: 40px;
-    background-color: rgba(34, 34, 34, 0.95);;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #550000;
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -152,8 +160,14 @@ button.hover{
 }
 
 .titulo-tabela {
-    margin-bottom: 20px;
+    
     font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    width: 635px;
+    margin: 20px auto;
 }
 
 .tabela-jogos {
@@ -176,6 +190,15 @@ button.hover{
     color: red;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover{
+    color: red;
+}
+
 .tabela-jogos tr:hover {
     background-color: #222;
 }
@@ -184,17 +207,17 @@ body{
     background-color: rgb(95, 2, 2);
 }
 
-.container {
+.box {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0.8);
     background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
     border-radius: 15px;
-    width: 300px;
+    width: 400px;
 }
 
 fieldset {
@@ -209,19 +232,49 @@ legend {
     border-radius: 8px;
 }
 
-input{
+.inputbox{
     position: relative;
+}
+.inputuser{
     background: none;
-    border: 1px;
+    border: none;
     border-bottom: 1px solid white;
     outline: none;
     color: white;
     font-size: 15px;
+    width: 90%;
+    letter-spacing: 2px;
+    padding-bottom: 3px;
 }
 
+.labelinput{
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputuser:focus ~ .labelinput,
+.inputuser:valid ~ .labelinput{
+    top: -12px;
+    font-size: 12px;
+    color: rgb(184, 35, 35);
+}
+
+.enterbutton{
+    background-color: #6C0A0A;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.enterbutton:hover{
+    background-color: #440606;
+}
 
 ol {
-    background-color: rgba(34, 34, 34, 0.95);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #550000;
     border-radius: 15px;
     width: 50%;
     min-width: 300px;
